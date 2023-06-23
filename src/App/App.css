@@ -1,0 +1,91 @@
+/* Global Styles */
+:root {
+  --main: #e50914;
+  --main-dark: #b80e16;
+  --custom-dark: #121212;
+  --swiper-pagination-color: var(--main);
+}
+
+.text-main {
+  color: var(--main) !important;
+}
+
+.bg-main {
+  background-color: var(--main) !important;
+}
+
+.bg-blur {
+  background: rgba(0, 0, 0, 0.4) !important;
+  backdrop-filter: blur(10px) !important;
+}
+
+.main-hover:hover {
+  color: var(--main) !important;
+  font-weight: 500;
+}
+
+.btn-main, .btn-outline-main:hover{
+  background-color: var(--main) !important;
+  color: white !important;
+}
+
+.btn-main:hover{
+  background-color: var(--main-dark) !important;
+}
+
+.btn-outline-main{
+  border: 1px solid var(--main) !important;
+  color: var(--main) !important;
+}
+
+::selection {
+  background-color: var(--main);
+    color: #000;
+}
+
+/* Navbar Styles */
+nav {
+  z-index: 1000000 !important;
+}
+
+.nav-link {
+  font-size: 13px !important;
+}
+
+.active {
+  color: var(--main) !important;
+}
+
+/* .sticky-nav {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 20;
+}
+ */
+/* Header Styles */
+header{
+  background-image: url(../Assets/Images/headerbg1.gif);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #222;
+}
+
+/* Scrollbar Styles */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #333;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--main);
+}
